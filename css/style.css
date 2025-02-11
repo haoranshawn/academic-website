@@ -1,0 +1,311 @@
+:root {
+    --bradley-red: #BA0C2F;
+    --dark-gray: #333333;
+    --light-gray: #f8f9fa;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    padding-top: 76px; /* Account for fixed navbar */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: var(--dark-gray);
+}
+
+/* Navigation */
+.navbar {
+    padding: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.98) !important;
+}
+
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: var(--bradley-red) !important;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--dark-gray) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--bradley-red) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--light-gray);
+    padding: 6rem 0;
+    margin-top: -76px; /* Offset the padding-top from body */
+}
+
+.hero-section h1 {
+    color: var(--bradley-red);
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: var(--bradley-red);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--bradley-red);
+    border-color: var(--bradley-red);
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #990A27;
+    border-color: #990A27;
+    transform: translateY(-2px);
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: var(--bradley-red);
+}
+
+/* Profile Image */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 3px solid var(--bradley-red);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Add responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Teaching Philosophy */
+.teaching-philosophy {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.teaching-philosophy p {
+    text-align: justify;
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+}
+
+.teaching-philosophy p:first-of-type {
+    font-size: 1.2rem;
+    color: var(--bradley-red);
+    font-style: italic;
+    border-left: 4px solid var(--bradley-red);
+    padding-left: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+/* Research Philosophy */
+.research-philosophy {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.research-philosophy p {
+    text-align: justify;
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+}
+
+.research-philosophy p:first-of-type {
+    font-size: 1.2rem;
+    color: var(--bradley-red);
+    font-style: italic;
+    border-left: 4px solid var(--bradley-red);
+    padding-left: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+/* Service Summary */
+.service-summary {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.service-summary p {
+    text-align: justify;
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+}
+
+.service-summary p:first-of-type {
+    font-size: 1.2rem;
+    color: var(--bradley-red);
+    font-style: italic;
+    border-left: 4px solid var(--bradley-red);
+    padding-left: 1.5rem;
+    margin-left: -1.5rem;
+}
+
+/* Course Evaluations */
+.course-evaluations {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.evaluation-chart {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.course-evaluations .lead {
+    color: var(--dark-gray);
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* PDF Viewer */
+.pdf-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.pdf-viewer {
+    border: none;
+    border-radius: 4px;
+    background: white;
+}
+
+/* Make PDF viewer responsive */
+@media (max-width: 768px) {
+    .pdf-container {
+        padding: 0.5rem;
+    }
+    
+    .pdf-viewer {
+        height: 400px;
+    }
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Left Navigation */
+.side-nav {
+    position: sticky;
+    top: 100px;
+    padding: 1rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.side-nav .nav-link {
+    color: var(--dark-gray);
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.side-nav .nav-link:hover {
+    background-color: rgba(var(--bradley-red-rgb), 0.1);
+    color: var(--bradley-red);
+}
+
+.side-nav .nav-link.active {
+    background-color: var(--bradley-red);
+    color: white;
+}
+
+/* Make main content area responsive */
+.content-area {
+    min-height: 100vh;
+}
+
+@media (max-width: 992px) {
+    .side-nav {
+        position: relative;
+        top: 0;
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+    }
+    
+    .side-nav .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+    }
+    
+    .side-nav .nav-link {
+        white-space: nowrap;
+    }
+}
