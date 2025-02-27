@@ -43,20 +43,30 @@
     <main class="container py-5">
         <div class="row">
             <!-- Left Navigation -->
-            <div class="col-lg-3">
-                <div class="side-nav">
-                    <nav class="nav flex-column">
-                        <a class="nav-link active" href="#research-summary">Research Summary</a>
-                        <a class="nav-link" href="#research-philosophy">Research Philosophy</a>
-                        <a class="nav-link" href="#publications">Publications</a>
-                        <a class="nav-link" href="#projects">Current Projects</a>
-                        <a class="nav-link" href="#research-progress">Research Progress</a>
-                    </nav>
+            <div class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#research-summary">Research Summary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#research-pipeline">Research Pipeline</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#research-philosophy">Research Philosophy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#current-projects">Current Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#publications">Selected Publications</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
             <!-- Main Content Area -->
-            <div class="col-lg-9">
+            <div class="col-md-9 col-lg-10">
                 <section class="content-area">
                     <h1 class="display-4 mb-4">Research</h1>
                     
@@ -107,7 +117,7 @@
                     </div>
 
                     <!-- Research Progress Tracker -->
-                    <div class="card mb-5" id="research-progress">
+                    <div class="card mb-5" id="research-pipeline">
                         <div class="card-body">
                             <h2 class="card-title mb-4">Research Pipeline</h2>
                             
@@ -119,66 +129,61 @@
                                             <i class="fas fa-chevron-right me-2"></i>Affordance Review
                                         </a>
                                     </h5>
-                                    <div class="progress" style="width: 200px;">
-                                        <div class="progress-bar" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">72%</div>
-                                    </div>
+                                </div>
+                                <div class="card card-body bg-light mt-3">
+                                    <h6 class="mb-3">Paper Description</h6>
+                                    <p class="text-muted mb-0">
+                                        [Add detailed description of the Affordance Review paper here, including research objectives, methodology, and expected contributions.]
+                                    </p>
                                 </div>
                                 <div class="timeline-container mb-4">
                                     <div class="timeline-bar" style="height: 60px; position: relative; padding: 10px 0;">
-                                        <div class="timeline-track" style="height: 4px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
-                                        <div class="timeline-progress" style="height: 4px; background-color: #007bff; width: 72%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-track" style="height: 12px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-progress" style="height: 12px; background-color: #0077B6; width: 72%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
                                         
                                         <div class="timeline-markers" style="position: relative; height: 100%;">
                                             <!-- Start -->
-                                            <div class="marker" style="position: absolute; left: 0%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 0%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-flag text-primary" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Start</div>
                                             </div>
 
                                             <!-- Submitted -->
-                                            <div class="marker" style="position: absolute; left: 20%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 20%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-paper-plane text-primary" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Submitted</div>
                                             </div>
 
                                             <!-- Rejected -->
-                                            <div class="marker" style="position: absolute; left: 35%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 35%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-times-circle text-danger" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Rejected</div>
                                             </div>
 
                                             <!-- Resubmitted -->
-                                            <div class="marker" style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 50%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-sync text-primary" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Resubmitted</div>
                                             </div>
 
                                             <!-- Round 1 -->
-                                            <div class="marker" style="position: absolute; left: 65%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 65%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-comments text-warning" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Round 1</div>
                                             </div>
 
                                             <!-- Current: Round 2 -->
-                                            <div class="marker" style="position: absolute; left: 72%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 72%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-circle text-primary" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Round 2</div>
                                             </div>
 
                                             <!-- Target -->
-                                            <div class="marker" style="position: absolute; right: 0; top: 0; transform: translateX(50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; right: 0; top: -30px; transform: translateX(50%); text-align: center;">
                                                 <i class="fas fa-flag-checkered text-primary" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Target</div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="paper1Details">
-                                    <div class="card card-body bg-light mt-3">
-                                        <h6 class="mb-3">Paper Description</h6>
-                                        <p class="text-muted mb-0">
-                                            [Add detailed description of the Affordance Review paper here, including research objectives, methodology, and expected contributions.]
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -191,37 +196,32 @@
                                             <i class="fas fa-chevron-right me-2"></i>Mobile Healthcare Systems Adoption
                                         </a>
                                     </h5>
-                                    <div class="progress" style="width: 200px;">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 96%;" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">96%</div>
-                                    </div>
+                                </div>
+                                <div class="card card-body bg-light mt-3">
+                                    <h6 class="mb-3">Paper Description</h6>
+                                    <p class="text-muted mb-0">
+                                        [Add detailed description of the Mobile Healthcare Systems Adoption paper here, including research objectives, methodology, and expected contributions.]
+                                    </p>
                                 </div>
                                 <div class="timeline-container mb-4">
                                     <div class="timeline-bar" style="height: 60px; position: relative; padding: 10px 0;">
-                                        <div class="timeline-track" style="height: 4px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
-                                        <div class="timeline-progress" style="height: 4px; background-color: #28a745; width: 96%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-track" style="height: 12px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-progress" style="height: 12px; background-color: #34C759; width: 96%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
                                         
                                         <div class="timeline-markers" style="position: relative; height: 100%;">
-                                            <div class="marker" style="position: absolute; left: 0%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 0%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-flag text-success" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Start</div>
                                             </div>
-                                            <div class="marker" style="position: absolute; left: 96%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 96%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-check-circle text-success" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Final Review</div>
                                             </div>
-                                            <div class="marker" style="position: absolute; right: 0; top: 0; transform: translateX(50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; right: 0; top: -30px; transform: translateX(50%); text-align: center;">
                                                 <i class="fas fa-flag-checkered text-success" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Target</div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="paper2Details">
-                                    <div class="card card-body bg-light mt-3">
-                                        <h6 class="mb-3">Paper Description</h6>
-                                        <p class="text-muted mb-0">
-                                            [Add detailed description of the Mobile Healthcare Systems Adoption paper here, including research objectives, methodology, and expected contributions.]
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -234,37 +234,32 @@
                                             <i class="fas fa-chevron-right me-2"></i>Mobile Healthcare System Usage Impact
                                         </a>
                                     </h5>
-                                    <div class="progress" style="width: 200px;">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 71%;" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">71%</div>
-                                    </div>
+                                </div>
+                                <div class="card card-body bg-light mt-3">
+                                    <h6 class="mb-3">Paper Description</h6>
+                                    <p class="text-muted mb-0">
+                                        [Add detailed description of the Mobile Healthcare System Usage Impact paper here, including research objectives, methodology, and expected contributions.]
+                                    </p>
                                 </div>
                                 <div class="timeline-container mb-4">
                                     <div class="timeline-bar" style="height: 60px; position: relative; padding: 10px 0;">
-                                        <div class="timeline-track" style="height: 4px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
-                                        <div class="timeline-progress" style="height: 4px; background-color: #ffc107; width: 71%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-track" style="height: 12px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-progress" style="height: 12px; background-color: #34C759; width: 71%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
                                         
                                         <div class="timeline-markers" style="position: relative; height: 100%;">
-                                            <div class="marker" style="position: absolute; left: 0%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 0%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-flag text-warning" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Start</div>
                                             </div>
-                                            <div class="marker" style="position: absolute; left: 71%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 71%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-circle text-warning" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">In Progress</div>
                                             </div>
-                                            <div class="marker" style="position: absolute; right: 0; top: 0; transform: translateX(50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; right: 0; top: -30px; transform: translateX(50%); text-align: center;">
                                                 <i class="fas fa-flag-checkered text-warning" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Target</div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="paper3Details">
-                                    <div class="card card-body bg-light mt-3">
-                                        <h6 class="mb-3">Paper Description</h6>
-                                        <p class="text-muted mb-0">
-                                            [Add detailed description of the Mobile Healthcare System Usage Impact paper here, including research objectives, methodology, and expected contributions.]
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -277,33 +272,28 @@
                                             <i class="fas fa-chevron-right me-2"></i>Analytics and Security Panel Report
                                         </a>
                                     </h5>
-                                    <div class="progress" style="width: 200px;">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                                    </div>
+                                </div>
+                                <div class="card card-body bg-light mt-3">
+                                    <h6 class="mb-3">Paper Description</h6>
+                                    <p class="text-muted mb-0">
+                                        [Add detailed description of the Analytics and Security Panel Report here, including research objectives, methodology, and key findings.]
+                                    </p>
                                 </div>
                                 <div class="timeline-container mb-4">
                                     <div class="timeline-bar" style="height: 60px; position: relative; padding: 10px 0;">
-                                        <div class="timeline-track" style="height: 4px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
-                                        <div class="timeline-progress" style="height: 4px; background-color: #28a745; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-track" style="height: 12px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-progress" style="height: 12px; background-color: #34C759; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
                                         
                                         <div class="timeline-markers" style="position: relative; height: 100%;">
-                                            <div class="marker" style="position: absolute; left: 0%; top: 0; transform: translateX(-50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; left: 0%; top: -30px; transform: translateX(-50%); text-align: center;">
                                                 <i class="fas fa-flag text-success" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Start</div>
                                             </div>
-                                            <div class="marker" style="position: absolute; right: 0; top: 0; transform: translateX(50%); text-align: center;">
+                                            <div class="marker" style="position: absolute; right: 0; top: -30px; transform: translateX(50%); text-align: center;">
                                                 <i class="fas fa-check-circle text-success" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Complete</div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="paper4Details">
-                                    <div class="card card-body bg-light mt-3">
-                                        <h6 class="mb-3">Paper Description</h6>
-                                        <p class="text-muted mb-0">
-                                            [Add detailed description of the Analytics and Security Panel Report here, including research objectives, methodology, and key findings.]
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -316,37 +306,32 @@
                                             <i class="fas fa-chevron-right me-2"></i>Privacy as we know
                                         </a>
                                     </h5>
-                                    <div class="progress" style="width: 200px;">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 38%;" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100">38%</div>
-                                    </div>
+                                </div>
+                                <div class="card card-body bg-light mt-3">
+                                    <h6 class="mb-3">Paper Description</h6>
+                                    <p class="text-muted mb-0">
+                                        [Add detailed description of the Privacy as we know paper here, including research objectives, methodology, and expected contributions.]
+                                    </p>
                                 </div>
                                 <div class="timeline-container mb-4">
                                     <div class="timeline-bar" style="height: 60px; position: relative; padding: 10px 0;">
-                                        <div class="timeline-track" style="height: 4px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
-                                        <div class="timeline-progress" style="height: 4px; background-color: #dc3545; width: 38%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-track" style="height: 12px; background-color: #e9ecef; width: 100%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
+                                        <div class="timeline-progress" style="height: 12px; background-color: #34C759; width: 38%; position: absolute; top: 50%; transform: translateY(-50%);"></div>
                                         
                                         <div class="timeline-markers" style="position: relative; height: 100%;">
-                                            <div class="marker" style="position: absolute; left: 0%; top: 0; transform: translateX(-50%); text-align: center;">
-                                                <i class="fas fa-flag text-danger" style="font-size: 12px;"></i>
+                                            <div class="marker" style="position: absolute; left: 0%; top: -30px; transform: translateX(-50%); text-align: center;">
+                                                <i class="fas fa-flag text-success" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Start</div>
                                             </div>
-                                            <div class="marker" style="position: absolute; left: 38%; top: 0; transform: translateX(-50%); text-align: center;">
-                                                <i class="fas fa-circle text-danger" style="font-size: 12px;"></i>
+                                            <div class="marker" style="position: absolute; left: 38%; top: -30px; transform: translateX(-50%); text-align: center;">
+                                                <i class="fas fa-circle text-success" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">In Progress</div>
                                             </div>
-                                            <div class="marker" style="position: absolute; right: 0; top: 0; transform: translateX(50%); text-align: center;">
-                                                <i class="fas fa-flag-checkered text-danger" style="font-size: 12px;"></i>
+                                            <div class="marker" style="position: absolute; right: 0; top: -30px; transform: translateX(50%); text-align: center;">
+                                                <i class="fas fa-flag-checkered text-success" style="font-size: 12px;"></i>
                                                 <div class="marker-label" style="font-size: 0.75rem; margin-top: 4px;">Target</div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="collapse" id="paper5Details">
-                                    <div class="card card-body bg-light mt-3">
-                                        <h6 class="mb-3">Paper Description</h6>
-                                        <p class="text-muted mb-0">
-                                            [Add detailed description of the Privacy as we know paper here, including research objectives, methodology, and expected contributions.]
-                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -459,7 +444,7 @@
                             </div>
 
                             <!-- Current Projects -->
-                            <div class="card mb-5" id="projects">
+                            <div class="card mb-5" id="current-projects">
                                 <div class="card-body">
                                     <h2 class="card-title">Current Projects</h2>
                                     <div class="row g-4">
