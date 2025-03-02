@@ -16,12 +16,6 @@
     
     <!-- Custom CSS -->
     <link href="../css/style.css" rel="stylesheet">
-    <!-- Chart.js and ChartDataLabels plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-    
-    <!-- Dashboard CSS -->
-    <link href="../css/dashboard.css" rel="stylesheet">
     <link href="../css/responsive.css" rel="stylesheet">
 </head>
 <body>
@@ -121,164 +115,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Publication Journey Dashboard -->
-                    <div class="dashboard-container mb-5">
-                        <h4 class="text-primary mb-3">Publication Journey Dashboard</h4>
-                        
-                        <!-- Key Stats -->
-                        <div class="stats-container">
-                            <div class="stat-card">
-                                <div class="stat-value">15</div>
-                                <div class="stat-label">Total Publications</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-value">7</div>
-                                <div class="stat-label">Published</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-value">4</div>
-                                <div class="stat-label">In Progress</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-value">46.7%</div>
-                                <div class="stat-label">Publication Rate</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Charts Row 1 -->
-                        <div class="chart-row">
-                            <div class="chart-col">
-                                <div class="dashboard-card">
-                                    <div class="dashboard-card-header">
-                                        Publication Status Distribution
-                                    </div>
-                                    <div class="dashboard-card-body">
-                                        <div class="chart-container">
-                                            <canvas id="statusChart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chart-col">
-                                <div class="dashboard-card">
-                                    <div class="dashboard-card-header">
-                                        Document Type Distribution
-                                    </div>
-                                    <div class="dashboard-card-body">
-                                        <div class="chart-container">
-                                            <canvas id="documentTypeChart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Charts Row 2 -->
-                        <div class="chart-row">
-                            <div class="chart-col">
-                                <div class="dashboard-card">
-                                    <div class="dashboard-card-header">
-                                        Publication Timeline
-                                    </div>
-                                    <div class="dashboard-card-body">
-                                        <div class="chart-container">
-                                            <canvas id="timelineChart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chart-col">
-                                <div class="dashboard-card">
-                                    <div class="dashboard-card-header">
-                                        Current Status by Submission Year
-                                    </div>
-                                    <div class="dashboard-card-body">
-                                        <div class="chart-container">
-                                            <canvas id="statusByYearChart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Journal Analysis Dashboard -->
-                    <div class="dashboard-container mb-5">
-                        <h4 class="text-primary mb-3">Target Journal Analysis Dashboard</h4>
-                        
-                        <!-- Key Stats -->
-                        <div class="stats-container">
-                            <div class="stat-card">
-                                <div class="stat-value">7</div>
-                                <div class="stat-label">Target Journals</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-value">20.3%</div>
-                                <div class="stat-label">Avg. Acceptance Rate</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-value">4.0</div>
-                                <div class="stat-label">Avg. Review Time (Months)</div>
-                            </div>
-                        </div>
-                        
-                        <!-- Charts -->
-                        <div class="chart-row">
-                            <div class="chart-col">
-                                <div class="dashboard-card">
-                                    <div class="dashboard-card-header">
-                                        Journal Impact Factors
-                                    </div>
-                                    <div class="dashboard-card-body">
-                                        <div class="chart-container">
-                                            <canvas id="journalImpactChart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chart-col">
-                                <div class="dashboard-card">
-                                    <div class="dashboard-card-header">
-                                        Journal Acceptance Rates
-                                    </div>
-                                    <div class="dashboard-card-body">
-                                        <div class="chart-container">
-                                            <canvas id="acceptanceRateChart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="chart-row">
-                            <div class="chart-col">
-                                <div class="dashboard-card">
-                                    <div class="dashboard-card-header">
-                                        Review Time (Months)
-                                    </div>
-                                    <div class="dashboard-card-body">
-                                        <div class="chart-container">
-                                            <canvas id="reviewTimeChart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chart-col">
-                                <div class="dashboard-card">
-                                    <div class="dashboard-card-header">
-                                        Open Access vs Subscription
-                                    </div>
-                                    <div class="dashboard-card-body">
-                                        <div class="chart-container">
-                                            <canvas id="openAccessChart"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+
                     <!-- Research Progress Tracker -->
                     <div class="card mb-5" id="research-pipeline">
                         <div class="card-body">
@@ -682,9 +519,5 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             <!-- Custom JS -->
             <script src="../js/main.js"></script>
-            <!-- Publication Dashboard JS -->
-            <script src="../js/publication-dashboard.js"></script>
-            <!-- Journal Analysis Dashboard JS -->
-            <script src="../js/journal-analysis-dashboard.js"></script>
         </body>
         </html>
